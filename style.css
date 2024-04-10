@@ -1,0 +1,178 @@
+/* CSS pentru stilizarea paginilor */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#blog-name-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+#blog-name {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Aliniere text în centru */
+}
+
+.meniu {
+    display: inline-block; /* Pentru a alinia orizontal în centru */
+}
+
+.meniu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.meniu ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 15 px;
+    width: 120 px;
+    
+}
+
+.active, .meniu ul li:hover{
+    background-color: #5a5656;
+    border: 3px;
+    padding: 10px 0;
+    
+}
+
+.meniu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submeniu {
+    display:none;
+}
+
+.meniu ul li:hover .submeniu {
+    display:block;
+    position:absolute;
+    background-color: #333;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.meniu ul li:hover .submeniu ul {
+    display: block;
+    margin: 0%;
+
+}
+
+.meniu ul li:hover .submeniu ul li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px dotted #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ebe7e7;
+    color: #fff;
+    text-align: center;
+    position:static;
+    padding: 1px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; 
+    margin-bottom: 20px;
+    text-decoration: none; 
+}
+
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Va face ca articolele să fie plasate pe coloane, fiecare cu o lățime minimă de 300px */
+    grid-gap: 20px; /* Spațiu între casetele de articole */
+}
+
+
+
+.article-box h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+
+/* Stilizarea casetelor articolelor */
+.articles-list {
+    list-style: none;
+    padding: 0;
+}
+
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Va face ca articolele să fie plasate pe coloane, fiecare cu o lățime minimă de 300px */
+    grid-gap: 20px; /* Spațiu între casetele de articole */
+}
+
+.articles-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.article-box h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+
+
+.articles-list li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
